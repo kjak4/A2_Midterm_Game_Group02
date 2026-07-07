@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
   <title>Through the Trees</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * { margin:0; padding:0; }
+    body { background:#000; overflow:hidden; }
+    canvas { display:block; position:fixed; top:0; left:0; }
+  </style>
 </head>
 <body>
-  <div id="game-wrapper">
-    <canvas id="gameCanvas"></canvas>
-  </div>
-
-  <!-- Load order matters: game logic → drawing → entry point -->
   <script src="libraries/p5.min.js"></script>
-  <script src="game.js"></script>
-  <script src="scenes.js"></script>
   <script src="sketch.js"></script>
 </body>
 </html>
